@@ -1,0 +1,90 @@
+.orders-page {
+  padding: 40px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.orders-page h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+/* ORDER CARD */
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+
+  padding: 25px;
+  margin-bottom: 30px;
+
+  border: 1px solid #ddd;
+}
+
+/* ORDER HEADER */
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.total-price {
+  color: green;
+}
+
+/* ORDER ITEMS */
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* SINGLE ITEM */
+
+.single-item {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  border: 1px solid #eee;
+  border-radius: 10px;
+
+  padding: 15px;
+}
+
+/* IMAGE */
+
+.single-item img {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* DETAILS */
+
+.item-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item-details p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* EMPTY */
+
+.empty-order {
+  font-size: 24px;
+  color: gray;
+}

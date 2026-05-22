@@ -1,0 +1,154 @@
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fff5f5, #ffeaea);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADING ===== */
+h1 {
+  text-align: center;
+  color: darkred;
+  margin: 25px 0;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===== ITEMS GRID ===== */
+ol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+/* ===== CARD ===== */
+li {
+  background: white;
+  border-radius: 15px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== IMAGE ===== */
+.veg-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+li:hover .veg-img {
+  transform: scale(1.08);
+}
+
+/* ===== ITEM TITLE ===== */
+h3 {
+  color: #222;
+  margin: 12px 0;
+  font-size: 22px;
+}
+
+/* ===== TEXT ===== */
+p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 6px 0;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: linear-gradient(to right, darkred, red);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, red, darkred);
+  transform: scale(1.05);
+}
+
+/* ===== DISABLED BUTTON ===== */
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== TOASTIFY ===== */
+.Toastify__toast {
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Toastify__toast--success {
+  background: darkred;
+}
+
+/* ===== SWEET ALERT ===== */
+.swal2-popup {
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.swal2-title {
+  color: darkred;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  ol {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .veg-img {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,466 @@
+/* =========================
+   🌍 PAGE
+========================= */
+
+.cart-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   📦 MAIN CONTAINER
+========================= */
+
+.cart-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* =========================
+   🛒 LEFT SIDE
+========================= */
+
+.cart-left {
+  flex: 1;
+}
+
+.cart-left h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* =========================
+   🧾 CART ROW
+========================= */
+
+.cart-row {
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cart-row img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* =========================
+   🔢 QTY BOX
+========================= */
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.qty-box span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* =========================
+   💰 PRICE
+========================= */
+
+.cart-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* =========================
+   ❌ REMOVE BUTTON
+========================= */
+
+.remove-btn {
+  border: none;
+  padding: 10px 14px;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #d9363e;
+}
+
+/* =========================
+   🗑 CLEAR BUTTON
+========================= */
+
+.clear-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* =========================
+   📑 ORDER SUMMARY SIDEBAR
+========================= */
+
+.order-summary-sidebar {
+  width: 380px;
+  position: sticky;
+  top: 20px;
+}
+
+.summary-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.summary-box h2 {
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.summary-box hr {
+  margin: 14px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* =========================
+   💰 SUMMARY ROW
+========================= */
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.discount-text {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.grand-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* =========================
+   🎯 DISCOUNT BUTTONS
+========================= */
+
+.manual-discounts-section {
+  margin-top: 18px;
+}
+
+.manual-discounts-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.discount-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.discount-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.discount-buttons button:hover {
+  background: #e68900;
+}
+
+.discount-buttons button.active {
+  background: #111;
+}
+
+/* =========================
+   🎟 COUPON
+========================= */
+
+.coupon-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.coupon-box input {
+  flex: 1;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.coupon-box button {
+  padding: 11px 18px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   📧 EMAIL SECTION
+========================= */
+
+.email-section {
+  margin-top: 20px;
+}
+
+.email-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-link {
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.email-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* =========================
+   💳 PAYMENT
+========================= */
+
+.payment-method-section {
+  margin-top: 22px;
+}
+
+.payment-method-section label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.payment-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.payment-buttons button {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.payment-buttons button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* =========================
+   📱 QR CONTAINER
+========================= */
+
+.qr-container {
+  margin-top: 18px;
+  text-align: center;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+/* =========================
+   💳 CARD CONTAINER
+========================= */
+
+.card-container {
+  margin-top: 18px;
+}
+
+.card-container input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.card-expiry-cvv {
+  display: flex;
+  gap: 12px;
+}
+
+/* =========================
+   💸 PAY BUTTON
+========================= */
+
+.pay-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: #1e7e34;
+}
+
+/* =========================
+   📩 CHECKOUT BUTTON
+========================= */
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #0056b3;
+}
+
+/* =========================
+   🛒 EMPTY CART
+========================= */
+
+.empty-cart-container {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.empty-msg {
+  font-size: 20px;
+  color: #777;
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .cart-container {
+    flex-direction: column;
+  }
+
+  .order-summary-sidebar {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .discount-buttons,
+  .payment-buttons,
+  .coupon-box {
+    flex-direction: column;
+  }
+
+  .summary-box {
+    padding: 18px;
+  }
+
+  .grand-total {
+    font-size: 18px;
+  }
+
+  .cart-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-row img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .remove-btn {
+    width: 100%;
+  }
+}

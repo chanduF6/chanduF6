@@ -1,0 +1,187 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== HOME CONTAINER ===== */
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== VIDEO ===== */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -2;
+
+  transform: scale(1.1);
+}
+
+/* ===== OVERLAY ===== */
+.overlay {
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  color: white;
+  max-width: 900px;
+
+  animation: fadeIn 1.5s ease;
+}
+
+/* ===== TITLE ===== */
+.hero h1 {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffd89b,
+    #ff9a9e
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== PARAGRAPH ===== */
+.hero p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.7;
+
+  margin-bottom: 40px;
+
+  color: #f1f1f1;
+}
+
+/* ===== BUTTONS ===== */
+.order-btn {
+  margin: 10px;
+  padding: 15px 35px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #ff512f,
+    #dd2476
+  );
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+
+  box-shadow: 0 10px 25px rgba(255, 81, 47, 0.4);
+}
+
+/* ===== BUTTON HOVER ===== */
+.order-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+
+  background: linear-gradient(
+    135deg,
+    #ff6a00,
+    #ee0979
+  );
+
+  box-shadow: 0 15px 35px rgba(255, 81, 47, 0.6);
+}
+
+/* ===== BUTTON ACTIVE ===== */
+.order-btn:active {
+  transform: scale(0.95);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .order-btn {
+    width: 220px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .order-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
