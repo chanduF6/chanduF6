@@ -86,60 +86,70 @@ function Desserts() {
       image: "/Desserts/Kheer.jpg"
     },
     {
+      id:"61",
       name: "Ladoo",
       price: 60,
       description: "Traditional sweet balls",
       image: "/Desserts/Ladoo.jpg"
     },
     {
+      id:"62",
       name: "Jalebi",
       price: 70,
       description: "Crispy sweet spirals in sugar syrup",
       image: "/Desserts/Jalebi.jpg"
     },
     {
+     id:"63", 
       name: "Pudding",
       price: 90,
       description: "Soft creamy pudding",
       image: "/Desserts/Pudding.jpg"
     },
     {
+     id:"64", 
       name: "Milkshake",
       price: 110,
       description: "Sweet chilled milkshake",
       image: "https://cdn-icons-png.flaticon.com/512/2405/2405479.png"
     },
     {
+      id:"65",
       name: "Falooda",
       price: 130,
       description: "Sweet dessert drink with ice cream",
       image: "https://cdn-icons-png.flaticon.com/512/685/685352.png"
     },
     {
+      id:"66",
       name: "Mysore Pak",
       price: 90,
       description: "Traditional sweet made with gram flour",
       image: "/Desserts/Mysore Pak.jpg"
     },
     {
+      id:"67",
       name: "Carrot Halwa",
       price: 85,
       description: "Sweet dish made with ghee and sugar",
       image: "/Desserts/Carrot Halwa.jpg"
     },
     {
+      id:"68",
       name: "Kulfi",
       price: 100,
       description: "Traditional Indian ice cream",
       image: "/Desserts/Kulfi.jpg"
     },
     {
+      id:"69",
       name: "Macaron",
       price: 150,
       description: "French sweet cookie dessert",
       image: "/Desserts/Macaron.jpg"
     },
     {
+      id:"70",
       name: "Tiramisu",
       price: 180,
       description: "Italian coffee-flavored dessert",
