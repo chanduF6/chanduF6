@@ -27,10 +27,10 @@ import {
 import "react-toastify/dist/ReactToastify.css";
 
 import { QRCode } from "react-qr-code";
+import emailjs from  "@emailjs/browser";
 
 import Swal from "sweetalert2";
 
-import emailjs from "@emailjs/browser";
 
 function Cart() {
 
