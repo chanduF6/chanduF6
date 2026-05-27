@@ -26,8 +26,8 @@ import {
 
 import "react-toastify/dist/ReactToastify.css";
 
-import { QRCode } from "react-qr-code";
-import emailjs from  "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+import QRCode from "react-qr-code";
 
 import Swal from "sweetalert2";
 
